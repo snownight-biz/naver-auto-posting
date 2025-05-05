@@ -16,6 +16,20 @@ async function loginNaver(page, id, pw) {
 /* ───────── 메인 업로드 함수 ───────── */
 async function uploadToNaver(title, content) {
   const browser = await puppeteer.launch({ headless: false, defaultViewport: null });
+  // NOTE:  headless 리눅스 cli 서버 에서 사용할 경우 아래 주석된 코드를 사용하고 바로 윗 라인은 삭제
+  // const browser = await puppeteer.launch({
+  //   headless: 'new', // 최신 headless 모드
+  //   args: [
+  //     '--no-sandbox',
+  //     '--disable-setuid-sandbox',
+  //     '--disable-dev-shm-usage',
+  //     '--disable-gpu',
+  //     '--disable-extensions',
+  //     '--disable-infobars',
+  //     '--start-maximized'
+  //   ]
+  // });
+
   const page = await browser.newPage();
 
   /* 1. 로그인 */
@@ -96,7 +110,7 @@ async function uploadToNaver(title, content) {
   });
   console.log('✅ 최종 발행 완료');
 
-  // await browser.close();
+  await browser.close();
 }
 
 module.exports = { uploadToNaver };
