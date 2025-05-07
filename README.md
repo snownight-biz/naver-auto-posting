@@ -108,6 +108,8 @@ GitHub에 올릴 경우 반드시 .gitignore에 포함하세요.
 ### 민감 정보 관리에 주의하세요 (.env 파일을 외부에 공개하지 마세요).
 
 # 💬 문의 및 기여
+email: snownight.biz@gmail.com
+       snownight_biz@naver.com
 ### 이슈나 PR은 언제든지 환영합니다.
 
 # 🚀 Happy Auto Posting!
