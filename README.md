@@ -2,6 +2,7 @@
 
 이 프로젝트는 **매일 1회**, **ChatGPT (OpenAI API)**를 이용해 자동으로 블로그 글을 생성하고, **Puppeteer**를 이용해 네이버 블로그에 자동으로 업로드하는 시스템입니다.
 
+실제 운영중인 블로그 : https://blog.naver.com/snownight_biz
 ---
 
 ## 🚀 주요 기능
@@ -109,7 +110,6 @@ GitHub에 올릴 경우 반드시 .gitignore에 포함하세요.
 
 # 💬 문의 및 기여
 snownight.biz@gmail.com
-
 snownight_biz@naver.com
 ### 이슈나 PR은 언제든지 환영합니다.
 
